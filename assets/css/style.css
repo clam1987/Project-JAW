@@ -1,0 +1,24 @@
+html{
+    background-image: url(../images/foodies.jpg); 
+}
+
+.jumbotron{
+position:absolute;
+left: 0;
+top: 25%;
+bottom:25%;
+width: 100%;
+text-align: center; 
+background: rgb(239,240,241,0.95)!important;
+font-family: 'Nanum Myeongjo', serif;
+}
+
+.jumbotron h1{
+    font-size:70px;
+}
+@media (max-width: 337px){
+.jumbotron, .bootstrapOverrides, #override{
+height:100%
+}
+}
+
