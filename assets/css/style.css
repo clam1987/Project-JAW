@@ -1,7 +1,13 @@
 html{
-    background-image: url(../images/foodies.jpg); 
+    background-image: url('../images/foodies.jpg'); 
+    height:100%; 
 }
 
+body{
+    height:100%; 
+    background-color:transparent !important;  
+    margin: 0px 0px 0px 0px !important; 
+}
 .jumbotron{
 position:absolute;
 left: 0;
@@ -16,9 +22,51 @@ font-family: 'Nanum Myeongjo', serif;
 .jumbotron h1{
     font-size:70px;
 }
+
+
 @media (max-width: 337px){
 .jumbotron, .bootstrapOverrides, #override{
 height:100%
 }
 }
 
+#signupbody{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position:absolute; 
+    right: 25%;
+    left:25%; 
+    background-color:white; 
+    top:18%; 
+
+}
+
+#signUpText{
+    text-align: center; 
+}
+
+.inputContainer{
+    width:100%;
+    padding: 20px;
+}
+
+#editRow{
+    padding:50px;
+
+    display: flex;  
+    justify-content: center;
+    flex-direction: column;
+    
+    
+}
+body{
+    min-width:1000px !important;        
+    width: auto !important;  
+    width:1000px !important;           
+ }
+
+ .page-footer{
+     position: absolute;
+     bottom:0;
+     background-color:rgb(214, 110, 110); 
+     width:100%; 
+ }
