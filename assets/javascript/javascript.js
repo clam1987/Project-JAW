@@ -39,7 +39,7 @@ $.ajax({
       var label = result.recipe.label;
       console.log(result.recipe.url);
       var urlLabel = result.recipe.url;
-      var emptyDiv = $("<div>");
+      var emptyDiv = $("<td id='results'>");
       var hyperlink = $("<a>").attr("href", urlLabel).text(label).attr("target", "_blank");
 
       emptyDiv.html(hyperlink);
