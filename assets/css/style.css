@@ -99,3 +99,15 @@ body{
      top: 10%;
      bottom: auto;
  }
+
+ @media only screen and (max-width: 1180px) {
+    #signInBody {
+     margin-top:25%; 
+    }
+  }
+
+  @media only screen and (max-width: 850px) {
+    #signInBody {
+     margin-top:35%; 
+    }
+  }
