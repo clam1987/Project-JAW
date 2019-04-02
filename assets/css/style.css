@@ -99,3 +99,5 @@ body{
      top: 10%;
      bottom: auto;
  }
+
+ .results:after{content: "\200B";}
