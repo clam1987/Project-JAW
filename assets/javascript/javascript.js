@@ -20,7 +20,7 @@ firebase.initializeApp(config);
 //variables
 
 
-$("#submitIngredients").on("click", function (event) {
+$("#searchButton").on("click", function (event) {
   event.preventDefault();
   var ingredients = $("#searchBar").val().trim();
        $(".results").empty();  
