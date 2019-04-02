@@ -97,6 +97,8 @@ height:100%
 #flex{
     display: flex;
     justify-content: center;
+  
+    justify-content: space-around;
 }
 
 body{
@@ -117,7 +119,7 @@ body{
     margin-left: 14px;
  }
  .page-footer{
-     position: absolute;
+     position: fixed;
      bottom:0;
      background-color:rgb(214, 110, 110); 
      width:100%; 
@@ -158,4 +160,13 @@ body{
     #signInBody{
         margin-top: 50%; 
     }
+    }
+
+    .results{
+        display: grid;
+        justify-content: normal;
+        text-align: center;
+        margin-top: 18%;
+        background-color: beige;
+    
     }
