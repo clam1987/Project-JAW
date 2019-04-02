@@ -37,7 +37,6 @@ $.ajax({
       var urlLabel = result.recipe.url;
       var emptyDiv = $("<div>");
       var hyperlink = $("<a>").attr("href", urlLabel).text(label).attr("target", "_blank");
-
       emptyDiv.html(hyperlink);
       $(".results").append(emptyDiv); 
 
