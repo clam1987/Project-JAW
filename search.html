@@ -8,23 +8,24 @@
 
 <body>
     <div id="backgroundSearch">
-    <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
+        <div class="container-fluid">
+            <div id="flex">
+                <div>
                     <h1>logo here</h1>
                 </div>
-                <div class="col-sm-6">
-                    <form class="form-inline md-form form-sm active-cyan-2 mt-2">
-                        <input class="form-control form-control-sm mr-3 w-75" id="searchBar" type="text"
-                            placeholder="Search" aria-label="Search">
-                        <i class="fas fa-search" aria-hidden="true"></i>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
+
+
+                <div id="search">
+                    <input class="form-control form-control-sm mr-3 w-75" id="searchBar" type="text"
+                        placeholder="Search" aria-label="Search">
+                    <button id="searchButton" type="submit" class="btn btn-primary">Submit</button>
+                    <button id="randomButton" type="submit" class="btn btn-primary">Random</button>
                 </div>
-                <div class="col-sm-2">
-                    <button type="button" class="btn">Button here</button>
-                </div>
+
+
             </div>
+
+
         </div>
     </div>
 
@@ -38,18 +39,18 @@
     </footer>
 
     <div class="results"></div>
-    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./assets/javascript/javascript.js"></script>
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo" rel="stylesheet">
 
 </body>
 
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+<script type="text/javascript" src="./assets/javascript/javascript.js"></script>
+<link rel="stylesheet" href="assets/css/reset.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo" rel="stylesheet">
 
 
 </html>
