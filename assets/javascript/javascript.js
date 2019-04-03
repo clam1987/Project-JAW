@@ -42,8 +42,8 @@ $.ajax({
       var urlLabel = result.recipe.url;
       var emptyDiv = $("<td id='results'>");
       var hyperlink = $("<a id='fontColor'>").attr("href", urlLabel).text(label).attr("target", "_blank");
-
       emptyDiv.html(hyperlink);
+      emptyDiv.append("<a id= 'youtubeL' href='https://www.youtube.com/results?search_query=how+to+make+"+label+"'>How to Make "+label+"</a>"); 
       $(".results").append(emptyDiv); 
 
     })
