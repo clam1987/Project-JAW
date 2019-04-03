@@ -75,7 +75,7 @@ var fbauth = {
   // ...
 
 
-  logoutuser: function (username, password) {
+  logOutUser: function (username, password) {
     firebase.auth().signOut().then(function () {
       // Sign-out successful.
     }).catch(function (error) {
@@ -87,13 +87,21 @@ var fbauth = {
 $("#submitBtn").on("click", function(e){
   e.preventDefault();
   console.log(e);
-  var uUsername = $('#emailInput').val().trim();
+  var uUsername = $('#usernameInput').val().trim();
   console.log(typeof uUsername);
   var uPass = $('#passwordInput').val();
   console.log(typeof uPass);
 
   fbauth.createUser(uUsername, uPass);
   fbauth.signIn(uUsername, uPass);
+  if (uUsername == ''|| uPass == '') {
+    alert("Please fill out the form");
+  } else if ((uPass.length) < 6) {
+    alert("Password needs to be at least 6 characters")
+  } else {
+    $(location).prop('href', './index.html')
+  }
+  
 });
 
 $("#login").on("click", function(e){
@@ -101,5 +109,18 @@ $("#login").on("click", function(e){
   var username = $('#exampleInputEmail1').val().trim();
   var password = $('#exampleInputPassword1').val();
   fbauth.signIn(username, password);
-  console.log('You signed in');
+  if(username == '' || password == '') {
+    alert("Please fill out login info")
+  } else if ((password.length) < 6) {
+    alert("Password is at least 6 characters")
+  } else {
+    $(location).prop('href', './search.html')
+  };
+
+});
+
+$("#randomButton").on("click", function(e) {
+e.preventDefault();
+  fbauth.logOutUser();
+  $(location).prop('href', './index.html');
 })
