@@ -145,6 +145,11 @@ body{
 
  }
 
+ #fontColor{
+     color:white !important;
+     font-family: Georgia, 'Times New Roman', Times, serif; 
+ }
+
  #signInJumbo{
 
     width: 35%;
@@ -172,7 +177,12 @@ body{
         justify-content: normal;
         text-align: center;
         margin-top: 18%;
-        background-color: beige;
+        background-color: #3E2113;
     
     }
 
+     @media (max-width: 560px){
+        #logoutButton{
+            margin-left: -20%; 
+        }
+        } 

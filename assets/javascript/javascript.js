@@ -37,10 +37,11 @@ $.ajax({
     // for each hit
     response.hits.forEach(function(result){
       var label = result.recipe.label;
+      console.log(result); 
       console.log(result.recipe.url);
       var urlLabel = result.recipe.url;
       var emptyDiv = $("<td id='results'>");
-      var hyperlink = $("<a>").attr("href", urlLabel).text(label).attr("target", "_blank");
+      var hyperlink = $("<a id='fontColor'>").attr("href", urlLabel).text(label).attr("target", "_blank");
 
       emptyDiv.html(hyperlink);
       $(".results").append(emptyDiv); 
